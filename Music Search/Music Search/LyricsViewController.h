@@ -24,5 +24,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbAlbum;
 
 @property (weak, nonatomic) IBOutlet UILabel *lbLyric;
-
+@property(nonatomic,strong)NSArray *musicItem;
 @end

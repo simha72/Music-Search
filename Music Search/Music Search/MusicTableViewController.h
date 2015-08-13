@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSArray *musicItems;
+@property(nonatomic,strong)NSString *song;
 
 @end

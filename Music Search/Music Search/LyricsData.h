@@ -11,6 +11,6 @@
 
 @interface LyricsData : NSObject
 
--(void)getStreamsFromURLString:(NSString *)urlString success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure;
+-(void)getStreamsFromURLString:(NSString *)urlString success:(void (^)(NSString *))success failure:(void (^)(NSError *))failure;
 
 @end

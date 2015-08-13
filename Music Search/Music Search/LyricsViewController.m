@@ -29,31 +29,30 @@
     self.dataRequest = [[LyricsData alloc]init];
     
     
-    NSString *str = self.artist;
-    
-    str = [str stringByReplacingOccurrencesOfString:@" "
-                                         withString:@"+"];
-    NSString *str2 = self.name;
-    
-    str2 = [str2 stringByReplacingOccurrencesOfString:@" "
-                                         withString:@"+"];
+    NSString *url = [NSString stringWithFormat:@"http://lyrics.wikia.com/api.php?action=lyrics&artist=%@&song=%@&fmt=xml", self.artist,self.name];
 
-
+ url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
-    [self requestJSONFromUrl:[NSString stringWithFormat:@"http://lyrics.wikia.com/api.php?artist=%@&song=%@&fmt=json", str,str2]];
+    [self requestJSONFromUrl:url];
+    
+ //   MyMusic *music = [MyMusic alloc]initWithLyrics:
+    
+   //  _lbLyric.text =music;
 }
 
 -(void)requestJSONFromUrl:(NSString *)urlString
 {
     
     
-    [self.dataRequest getStreamsFromURLString:urlString success:^(NSArray *musicArray) {
+    [self.dataRequest getStreamsFromURLString:urlString success:^(NSString *musicArray) {
         
-     //   self.musicItems = musicArray;
+     //  self.musicItem = musicArray;
         
-     //   MyMusic *music = [MyMusic alloc]initWithLyrics:<#(NSString *)#>
         
-        //self.lbLyric.text = music.;
+        NSString *str = musicArray;
+        
+        
+        _lbLyric.text = str;
         
     } failure:^(NSError *error) {
         

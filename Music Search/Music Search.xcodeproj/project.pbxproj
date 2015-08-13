@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20C5FB29F646AE46CB4740A7 /* libPods-Music Search.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA10F53DF172C703505B08CE /* libPods-Music Search.a */; };
+		47817E531B7D19FE0012C178 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 47817E521B7D19FE0012C178 /* XMLDictionary.m */; };
 		478C38421B7C0AAF005ECCD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C38411B7C0AAF005ECCD3 /* main.m */; };
 		478C38451B7C0AAF005ECCD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C38441B7C0AAF005ECCD3 /* AppDelegate.m */; };
 		478C38481B7C0AAF005ECCD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C38471B7C0AAF005ECCD3 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47817E511B7D19FE0012C178 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		47817E521B7D19FE0012C178 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		478C383C1B7C0AAF005ECCD3 /* Music Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		478C38401B7C0AAF005ECCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478C38411B7C0AAF005ECCD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 		478C38741B7C4546005ECCD3 /* DataRetrival */ = {
 			isa = PBXGroup;
 			children = (
+				47817E511B7D19FE0012C178 /* XMLDictionary.h */,
+				47817E521B7D19FE0012C178 /* XMLDictionary.m */,
 				478C38681B7C171B005ECCD3 /* MusicData.h */,
 				478C38691B7C171B005ECCD3 /* MusicData.m */,
 				478C38AA1B7C5DC5005ECCD3 /* LyricsData.h */,
@@ -345,6 +350,7 @@
 				478C386D1B7C1A4A005ECCD3 /* MusicTableViewController.m in Sources */,
 				478C386A1B7C171B005ECCD3 /* MusicData.m in Sources */,
 				478C38AC1B7C5DC5005ECCD3 /* LyricsData.m in Sources */,
+				47817E531B7D19FE0012C178 /* XMLDictionary.m in Sources */,
 				478C38451B7C0AAF005ECCD3 /* AppDelegate.m in Sources */,
 				478C38421B7C0AAF005ECCD3 /* main.m in Sources */,
 				478C38731B7C2F85005ECCD3 /* LyricsViewController.m in Sources */,

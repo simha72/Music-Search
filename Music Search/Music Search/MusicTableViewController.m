@@ -22,10 +22,12 @@
 
 @implementation MusicTableViewController
 
+@synthesize song;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self requestJSONFromUrl:@"https://itunes.apple.com/search?term=tom"];
+    [self requestJSONFromUrl:[NSString stringWithFormat:@"https://itunes.apple.com/search?term=%@",song]];
 }
 
 -(void)requestJSONFromUrl:(NSString *)urlString

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MusicTableViewController.h"
 
 @interface ViewController ()
 
@@ -41,6 +42,19 @@
 - (IBAction)searchButtonPressed:(id)sender {
     
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"songlistsegue"])
+    {
+        // Get reference to the destination view controller
+        MusicTableViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        [vc setSong:self.lbTextField.text];
+    }
 }
 
 
