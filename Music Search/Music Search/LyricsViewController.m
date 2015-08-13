@@ -8,6 +8,7 @@
 
 #import "LyricsViewController.h"
 #import "LyricsData.h"
+#import "MyMusic.h"
 
 @interface LyricsViewController ()
 @property(nonatomic,strong) LyricsData *dataRequest;
@@ -24,6 +25,8 @@
     self.lbArtist.text = self.artist;
     self.lbAlbum.text = self.album;
     self.albumImage.image = self.image;
+    
+    self.dataRequest = [[LyricsData alloc]init];
     
     
     NSString *str = self.artist;
@@ -42,16 +45,19 @@
 
 -(void)requestJSONFromUrl:(NSString *)urlString
 {
-    self.dataRequest = [[LyricsData alloc]init];
+    
     
     [self.dataRequest getStreamsFromURLString:urlString success:^(NSArray *musicArray) {
         
      //   self.musicItems = musicArray;
-      //  [self.tableView reloadData];
+        
+     //   MyMusic *music = [MyMusic alloc]initWithLyrics:<#(NSString *)#>
+        
+        //self.lbLyric.text = music.;
         
     } failure:^(NSError *error) {
         
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Error in Loading booksArraay" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Error in Loading Lyricks" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         [alertView show];
         
     }];

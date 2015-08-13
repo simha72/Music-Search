@@ -18,7 +18,10 @@
 @property(nonatomic,strong) NSString *imageURL;
 @property(nonatomic,strong) UIImage  *icon;
 
+@property(nonatomic,strong) NSString *lyrics;
+
 -(instancetype)initWithTrack:(NSString *)track artist:(NSString *)artist album:(NSString *)album imageURL:(NSString *)imageURL;
 
+-(instancetype)initWithLyrics:(NSString *)lyric;
 
 @end

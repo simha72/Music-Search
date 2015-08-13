@@ -31,6 +31,17 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     self.icon = [UIImage imageWithData:data];
 }
+-(instancetype)initWithLyrics:(NSString *)lyric{
 
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    else{
+    
+        self.lyrics = lyric;
+    }
+    return self;
+}
 
 @end

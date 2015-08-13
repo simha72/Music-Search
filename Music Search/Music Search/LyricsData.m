@@ -7,7 +7,7 @@
 //
 
 #import "LyricsData.h"
-
+#import "MyMusic.h"
 @implementation LyricsData
 
 
@@ -23,28 +23,16 @@
       //  NSDictionary *finalDict = (NSDictionary *)responseObject;
         NSLog(@" %@ ",responseObject);
         
-//        NSArray *array = finalDict[@"results"];
-//        
-//        NSMutableArray *musicArray = [[NSMutableArray alloc]init];
-//        for (NSDictionary *dict in array) {
-//            NSString *name = dict[@"trackName"];
-//            NSString *artist = dict[@"artistName"];
-//            NSString *author = dict[@"collectionName"];
-//            NSString *imageUrl = dict[@"artworkUrl100"];
-//            
-//            
-//            
-//            MyMusic *music = [[MyMusic alloc]initWithTrack:name artist:artist album:author imageURL:imageUrl];
-//            
-//            [musicArray addObject:music];
         
-       // }
-       // success(musicArray);
+          
+      //    MyMusic *music = [[MyMusic alloc]initWithLyrics:];
+       //   success();
+          
     }
      
      
      
-                                     failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                          NSLog(@" %@ ",error);
                                          failure(error);
                                      }];

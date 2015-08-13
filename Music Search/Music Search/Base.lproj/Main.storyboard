@@ -142,6 +142,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zBd-Yc-uZz">
                                 <rect key="frame" x="70" y="82" width="234" height="291"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lyrics " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-s2-g1d">
+                                <rect key="frame" x="44" y="565" width="250" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21135027948966523" green="1" blue="0.48119069006777859" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -150,6 +156,7 @@
                         <outlet property="albumImage" destination="zBd-Yc-uZz" id="pL1-aw-LPJ"/>
                         <outlet property="lbAlbum" destination="FIw-5H-0J5" id="ZEl-Pb-26S"/>
                         <outlet property="lbArtist" destination="WYh-hV-F0b" id="AJF-jY-V3J"/>
+                        <outlet property="lbLyric" destination="Ob4-s2-g1d" id="Lf2-tP-7Fn"/>
                         <outlet property="lbname" destination="ZRv-9j-iDu" id="5jh-zB-dZC"/>
                     </connections>
                 </viewController>
