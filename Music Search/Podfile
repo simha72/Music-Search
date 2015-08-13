@@ -1,0 +1,10 @@
+platform :ios, '7.0'
+
+target 'Music Search' do
+pod 'AFNetworking', '~> 2.5'
+end
+
+target 'Music SearchTests' do
+
+end
+
